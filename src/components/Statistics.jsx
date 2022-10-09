@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const Statistics = ({ data }) => {
+export const StatisticsInfo = ({ data }) => {
   return (
     <section class="statistics">
       <h2 class="title">Upload stats</h2>
@@ -15,4 +15,12 @@ export const Statistics = ({ data }) => {
       </ul>
     </section>
   );
+};
+
+StatisticsInfo.propTypes = {
+data: PropTypes.arrayOf(PropTypes.exact({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+}))
 };
