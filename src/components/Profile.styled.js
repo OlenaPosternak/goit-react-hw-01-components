@@ -25,8 +25,8 @@ export const Location = styled.p`
 export const Stats = styled.ul`
   list-style: none;
   display: flex;
-//   justify-content: space-between;
   margin:0px;
+  padding:0px;
 
   li {
     display: flex;

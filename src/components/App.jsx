@@ -1,9 +1,12 @@
-import { Profile } from './Profile';
 import user from '../../src/user.json';
-import data from '../../src/data.json';
-import { StatisticsInfo } from './Statistics';
+import stats from '../../src/data.json';
+import friends from '../../src/friends.json'
+import { Profile } from './Profile';
+import { Statistics } from './Statistics';
+import { FriendList } from './FriendList';
 
-console.log(data);
+
+console.log(friends);
 
 export const App = () => {
   return (
@@ -19,7 +22,8 @@ export const App = () => {
       }}
     >
       <Profile user={user}></Profile>
-      <StatisticsInfo data={data}></StatisticsInfo>
+      <Statistics stats={stats}></Statistics>
+      <FriendList friends={friends}></FriendList>
     </div>
   );
 };
