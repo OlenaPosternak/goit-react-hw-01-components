@@ -9,7 +9,7 @@ export const TableHead = styled.thead`
 export const TableRowHead = styled.tr`
   display: flex;
   width: 1200px;
-  justify-content: space-between;
+  justify-content: space-around;
 `;
 
 

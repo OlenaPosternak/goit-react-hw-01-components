@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { FriendListStyle, Item, Status } from './FriendsList.styled';
+import { FriendListStyle, Item, Status, Name } from './FriendsList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -8,7 +8,7 @@ export const FriendList = ({ friends }) => {
         <Item key={id}>
           <Status props={isOnline}>◉</Status>
           <img class="avatar" src={avatar} alt="User avatar" width="48" />
-          <p class="name">{name}</p>
+          <Name>{name}</Name>
         </Item>
       ))}
     </FriendListStyle>

@@ -5,11 +5,22 @@ export const FriendListStyle = styled.ul`
 `;
 
 export const Item = styled.li`
-  text-align: center;
+  display: flex;
+  width: 450px;
+  align-items: center;
+
+  border: 1px solid gray;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+`;
+
+export const Name = styled.p`
+  margin-left: 50px;
 `;
 
 export const Status = styled.span`
-margin-right: 30px;
+  margin-right: 30px;
   color: ${p => {
     if (p.props) {
       return `green`;
